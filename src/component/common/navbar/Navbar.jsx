@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 function Navbar () {
     return (
         <section>
-            <NavLink to="/">HOME</NavLink>
+            <NavLink end to="/">HOME</NavLink>
              TOURS  ABOUT HELP
         </section>
     )

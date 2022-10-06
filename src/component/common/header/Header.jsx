@@ -7,7 +7,7 @@ function Header() {
         <section >
             <section >
                 <section >
-                    <NavLink to="/">LOGO</NavLink>
+                    <NavLink end to="/">LOGO</NavLink>
                 </section>
                 <section >
                     <Navbar/>

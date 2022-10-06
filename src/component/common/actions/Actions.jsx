@@ -1,11 +1,12 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import style from './Actions.css'
 
 function Actions () {
     return (
         <section>
             <div>
-                <NavLink activeClassName='is-active' to="/favourites">Heart</NavLink>
+                <NavLink to="/favourites">Heart</NavLink>
             </div>
             <div>SIGN IN</div>
         </section>
