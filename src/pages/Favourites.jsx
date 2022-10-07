@@ -23,9 +23,7 @@ const Favourites = () => {
     function removeFromFavourites(itemId) {
         try {
             axios.delete('http://localhost:3000/favourites' + '/' + itemId).then(resp => {
-                axios.get('http://localhost:3000/favourites').then(resp => {
-                    setCarouselItems(resp.data)
-                });
+                setCarouselItems(carouselItems.filter((x) => x.id !== itemId))
             });
         } catch (error) {
             alert(error)
@@ -35,11 +33,10 @@ const Favourites = () => {
         try {
             carouselItems.forEach(function(carouselItem){
                 axios.delete('http://localhost:3000/favourites' + '/' + carouselItem.id).then(resp => {
-                    axios.get('http://localhost:3000/favourites').then(resp => {
-                        setCarouselItems(resp.data)
-                    });
-                });
+                    }
+                );
             });
+            setCarouselItems([]);
         } catch (error) {
             alert(error)
         }
