@@ -1,1 +1,132 @@
- 
+.main{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+}
+
+.header{
+  height: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #0000003e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+
+}
+.navbar{
+font-family: "LatoLight";
+color: white;
+width: 30%;
+}
+.actions{
+  width: 18%;
+}
+.first-header-text{
+margin-top: 130px;
+}
+.first-header-text-small{
+  color: white;
+  font-family:'SyneExtraBold';
+  font-size: 35px;
+} 
+.first-header-text-bold{
+  color: white;
+  font-family:'SyneExtraBold';
+  font-size: 229px;
+}
+.second-header-text{
+  color: white;
+  font-family:'SyneExtraBold';
+  font-size: 45px;
+  margin-top: 200px;
+}
+.btn-explore-tours{
+  color: white;
+  font-family:'LatoLight';
+  font-size: 25px;
+  position: relative;
+  top: -50px;
+}
+.popular-tours{
+  font-family:'SyneExtraBold';
+  font-size: 28px;
+  text-align: start;
+  margin-left: 53px;
+  margin-top: 50px;
+}
+.favourites-block{
+  width: 411px !important;
+  height: 572px;
+  border: 1px solid #D3EAFF;
+  box-sizing: border-box;
+}
+.title-favourites{
+  font-family: 'SyneBold';
+  font-size: 18px;
+  margin-top: 30px;
+}
+.name-favourites{
+  margin-top: 20px;
+  font-family: 'LatoLight';
+}
+.btn-favourites-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.btn-favourites-buy{
+  width: 230px;
+  height: 53px;
+  border: none;
+  background-color: #D3EAFF;
+  font-family: 'SyneSemiBold';
+  font-size: 22px;
+}
+.btn-favourites-buy:hover{
+  background-color: #b5d8f8;
+}
+.btn-favourites-remote{
+  height: 53px;
+  width: 53px;
+  background-image: url(../../../assets/images/delete.png);
+  border: none;
+}
+.InfiniteCarouselArrow{
+
+}
+.InfiniteCarouselArrowPrev{
+  left: 1290px !important;
+  top: -20px !important;
+
+}
+.InfiniteCarouselArrowNext{
+  top: -20px !important;
+  right: 66px !important;
+}
+.img-favourites{
+  height: 296px;
+  width: 411px;
+}
+.btn-clear-all{
+  background-color: #ECECEC;
+  width: 230px;
+  height: 45px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-clear-all span{
+  color: black;
+  font-family: 'SyneSemiBold';
+  font-size: 22px;
+}

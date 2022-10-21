@@ -54,19 +54,19 @@ const Favourites = () => {
 
     return (
         <div>
-            <img src={topImage} alt="Top Image"/>
-            <div onClick={removeAllFromFavourites}><span>Clear all</span></div>
+            <div class='btn-clear-all' onClick={removeAllFromFavourites}><span>Clear all</span></div>
         <Slider {...settings}>
             {carouselItems.map((item) => (
-                <div key={item.id}>
-                    <img src={item.image} width='100%' alt={item.title}/>
-                    <div>{item.title}</div>
-                    <div>{item.mission_name}</div>
-                    <div>
-                        <button>Buy</button>
-                        <button onClick={removeFromFavourites.bind(this, item.id)}>Remove</button>
+                <div class='favourites-block' key={item.id}>
+                    <img class='img-favourites' src={item.image} width='100%' alt={item.title}/>
+                    <div class='title-favourites'>{item.title}</div>
+                    <div class='name-favourites'>{item.mission_name}</div>
+                    <div class='btn-favourites-div' >
+                        <button class='btn-favourites-buy'>Buy</button>
+                        <button class='btn-favourites-remote'  onClick={removeFromFavourites.bind(this, item.id)}></button>
                     </div>
                 </div>
+                
             ))}
         </Slider>
         </div>

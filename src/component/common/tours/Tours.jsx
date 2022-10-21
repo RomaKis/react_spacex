@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useQuery, gql} from '@apollo/client';
 import InfiniteCarousel from 'react-leaf-carousel';
 import axios from "axios";
+import style from './Tours.css'
 
 function Tours() {
     let carouselItems = [];
@@ -72,13 +73,13 @@ function Tours() {
             scrollOnDevice={true}
         >
                 {carouselItems.map((item) => (
-                    <div key={item.id}>
-                        <img src={item.image} alt={item.title}/>
-                        <div>{item.title}</div>
-                        <div>{item.mission_name}</div>
-                        <div>
-                            <button>Buy</button>
-                            <button onClick={addToFavourites.bind(this, item)}>Heart</button>
+                    <div class='tours-block' key={item.id}>
+                        <img class='img-tours' src={item.image} alt={item.title}/>
+                        <div class='title-tours' >{item.title}</div>
+                        <div class='name-tours' >{item.mission_name}</div>
+                        <div class='btn-tours-div'>
+                            <button class='btn-tours-buy'>Buy</button>
+                            <div  class='btn-tours-heart' onClick={addToFavourites.bind(this, item)}></div>
                         </div>
                     </div>
                 ))}

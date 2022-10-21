@@ -1,1 +1,47 @@
- 
+.img-tours{
+  height: 296px;
+  width: 411px;
+} 
+.btn-tours-buy{
+width: 230px;
+height: 53px;
+border: none;
+background-color: #D3EAFF;
+font-family: 'SyneSemiBold';
+font-size: 22px;
+}
+.btn-tours-buy:hover{
+  background-color: #b5d8f8;
+}
+.btn-tours-heart:hover{
+  background-image: url(../../../assets/images/heart-active.png);
+}
+.btn-tours-heart{
+height: 53px;
+width: 53px;
+background-image: url(../../../assets/images/heart.png);
+}
+.btn-tours-div{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 80px;
+padding-left: 45px;
+padding-right: 45px;
+
+}
+.title-tours{
+font-family: 'SyneBold';
+font-size: 24px;
+letter-spacing: 3px;
+margin-top: 30px;
+}
+.name-tours{
+  margin-top: 20px;
+  font-family: 'LatoLight';
+}
+.tours-block{
+  width: 411px;
+  height: 572px;
+  border: 1px solid #D3EAFF;
+}

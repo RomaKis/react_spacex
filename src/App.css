@@ -1,3 +1,19 @@
+@font-face {
+	font-family: SyneSemiBold;
+	src: url('./assets/fonts/Syne/static/Syne-SemiBold.ttf');
+}
+@font-face {
+	font-family: SyneBold;
+	src: url('./assets/fonts/Syne/static/Syne-Bold.ttf');
+}
+@font-face {
+	font-family: SyneExtraBold;
+	src: url('./assets/fonts/Syne/static/Syne-ExtraBold.ttf');
+}
+@font-face {
+	font-family: LatoLight;
+	src: url('./assets/fonts/Lato/Lato-Light.ttf');
+}
 .App {
   text-align: center;
 }

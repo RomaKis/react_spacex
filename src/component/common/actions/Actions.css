@@ -1,4 +1,38 @@
 
 .active{
-    background-color: green;
+ 
+}
+.heart-btn{
+
+}
+.img-div{
+  height: 50px;
+  width: 50px;
+  background-image: url(../../../assets/images/heart.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.img-div:active{
+  background-image: url(../../../assets/images/heart-active.png);
+}
+
+.action-flex{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.sign-in-btn{
+  height: 50px;
+  width: 163px;
+  background-color: #D3EAFF;
+  font-family: "SyneBold";
+  font-size: 24px;
+  text-shadow: 1px 3px 0 #969696, 1px 8px 5px #aba8a8, -6px -6px 20px rgb(0 0 0 / 3%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-btn:active{
+  background-color: #b1d4f5;
 }
